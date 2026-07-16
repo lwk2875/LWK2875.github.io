@@ -14,6 +14,7 @@
       <nav class="links">
         <a href="#about">关于</a>
         <a href="#projects">作品</a>
+        <a href="#blog">博客</a>
         <a href="#skills">技能</a>
         <a href="#contact">联系</a>
       </nav>
@@ -38,7 +39,8 @@
   <section class="section" id="about">
     <h2 class="section-title">关于我</h2>
     <div class="about-grid">
-      <div class="avatar">👤</div>
+      <!-- 把你的照片命名为 avatar.jpg 放进同一文件夹，然后把下面 src 改成像 "avatar.jpg" 即可 -->
+      <img class="avatar-img" src="avatar.svg" alt="头像" />
       <div class="about-text">
         <p>这里写一段自我介绍。例如：我热爱用代码创造价值，关注用户体验与工程质量。平时喜欢阅读、摄影和开源贡献。</p>
         <p>目前专注于 Web 开发方向，正在持续学习与输出。</p>
@@ -54,21 +56,49 @@
         <div class="card-thumb">📦</div>
         <h3>项目一</h3>
         <p>一句话描述这个项目解决了什么问题、用了什么技术。</p>
-        <a class="card-link" href="#">查看详情 →</a>
+        <a class="card-link" href="project1.html">查看详情 →</a>
       </article>
       <article class="card">
         <div class="card-thumb">🚀</div>
         <h3>项目二</h3>
         <p>一句话描述这个项目解决了什么问题、用了什么技术。</p>
-        <a class="card-link" href="#">查看详情 →</a>
+        <a class="card-link" href="project2.html">查看详情 →</a>
       </article>
       <article class="card">
         <div class="card-thumb">🛠️</div>
         <h3>项目三</h3>
         <p>一句话描述这个项目解决了什么问题、用了什么技术。</p>
-        <a class="card-link" href="#">查看详情 →</a>
+        <a class="card-link" href="project3.html">查看详情 →</a>
       </article>
     </div>
+  </section>
+
+  <!-- 博客 -->
+  <section class="section" id="blog">
+    <h2 class="section-title">博客文章</h2>
+    <ul class="blog-list">
+      <li class="blog-item">
+        <a href="project1.html">
+          <span class="blog-date">2026-07-10</span>
+          <h3>我是如何搭建这个个人网站的</h3>
+          <p>从零开始，用 GitHub Pages 免费上线一个属于自己的主页，全程不到半小时。</p>
+        </a>
+      </li>
+      <li class="blog-item">
+        <a href="project2.html">
+          <span class="blog-date">2026-06-28</span>
+          <h3>第一次参与开源项目的经验总结</h3>
+          <p>记录我从 fork 到提交第一个 PR 的完整过程，以及踩过的那些坑。</p>
+        </a>
+      </li>
+      <li class="blog-item">
+        <a href="project3.html">
+          <span class="blog-date">2026-06-15</span>
+          <h3>前端新手应该先学什么</h3>
+          <p>HTML、CSS、JavaScript 之外，还有哪些值得提前了解的概念和工具。</p>
+        </a>
+      </li>
+    </ul>
   </section>
 
   <!-- 技能 -->

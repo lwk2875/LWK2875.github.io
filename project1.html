@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目一 · 个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">你的名字</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <a class="back-link" href="index.html">← 返回首页</a>
+
+    <div class="detail-hero">
+      <p class="hello">项目详情</p>
+      <h1>项目一</h1>
+      <p class="detail-meta">2026 · 个人项目 · 技术栈：HTML / CSS / GitHub Pages</p>
+      <div class="tag-row">
+        <span class="tag">静态网站</span>
+        <span class="tag">响应式</span>
+        <span class="tag">免费托管</span>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <p>这里写项目的背景：你为什么做它、想解决什么问题。例如：想有一个属于自己的网络名片，展示作品和思考。</p>
+
+      <h2>功能亮点</h2>
+      <ul>
+        <li>首屏介绍 + 关于 + 作品 + 博客 + 技能 + 联系六大模块</li>
+        <li>深色/浅色主题，移动端自适应</li>
+        <li>零成本部署到 GitHub Pages，自动上线</li>
+      </ul>
+
+      <h2>技术实现</h2>
+      <p>用纯 HTML + CSS 实现，没有依赖框架。部署通过 GitHub Pages 的 branch 模式，每次 push 自动更新。</p>
+
+      <h2>后续计划</h2>
+      <p>接入博客生成器、增加中英双语切换、绑定自定义域名。</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 你的名字 · 由 GitHub Pages 驱动</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

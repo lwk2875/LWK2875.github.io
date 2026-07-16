@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目三 · 个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">你的名字</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <a class="back-link" href="index.html">← 返回首页</a>
+
+    <div class="detail-hero">
+      <p class="hello">项目详情</p>
+      <h1>项目三</h1>
+      <p class="detail-meta">2026 · 学习笔记 · 技术栈：Markdown / 写作</p>
+      <div class="tag-row">
+        <span class="tag">学习</span>
+        <span class="tag">前端</span>
+        <span class="tag">笔记</span>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <p>这里写项目的背景：整理前端学习路线的过程，沉淀成一份给新手看的指南。</p>
+
+      <h2>核心内容</h2>
+      <ul>
+        <li>HTML / CSS 基础与布局</li>
+        <li>JavaScript 语法与常见 API</li>
+        <li>Git 版本控制与协作流程</li>
+        <li>如何部署静态网站</li>
+      </ul>
+
+      <h2>适合谁看</h2>
+      <p>想入门前端、但不知道从哪开始的同学。强调动手实践而非死记概念。</p>
+
+      <h2>下一步</h2>
+      <p>计划补充框架（React/Vue）入门与实战小项目章节。</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 你的名字 · 由 GitHub Pages 驱动</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

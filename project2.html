@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目二 · 个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">你的名字</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <a class="back-link" href="index.html">← 返回首页</a>
+
+    <div class="detail-hero">
+      <p class="hello">项目详情</p>
+      <h1>项目二</h1>
+      <p class="detail-meta">2026 · 开源贡献 · 技术栈：Git / GitHub</p>
+      <div class="tag-row">
+        <span class="tag">开源</span>
+        <span class="tag">协作</span>
+        <span class="tag">文档</span>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <p>这里写项目的背景：你参与了一个开源项目，从阅读文档、提 Issue 到提交第一个 PR 的完整经历。</p>
+
+      <h2>我的贡献</h2>
+      <ul>
+        <li>修复文档中的错别字与表述不清之处</li>
+        <li>提交了一个 good first issue 的修复</li>
+        <li>补充了中文翻译段落</li>
+      </ul>
+
+      <h2>学到的东西</h2>
+      <p>Fork → Clone → 分支开发 → Commit → Push → PR 的标准流程，以及开源协作的基本礼仪。</p>
+
+      <h2>总结</h2>
+      <p>第一次贡献就成功合并，建立起了持续参与开源的信心。</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 你的名字 · 由 GitHub Pages 驱动</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
